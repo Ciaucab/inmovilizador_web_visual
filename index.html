@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Inmovilizador ESP32</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Pantalla de conexión -->
+  <div id="connection-screen" class="screen active">
+    <img id="logo-inicio" src="https://www.dropbox.com/scl/fi/yrby288uu861s0tzhbkj9/photosstyle-1.png?rlkey=qphbmqrwv18008f53z5uo7ydu&st=y07fy3mj&raw=1" alt="Logo" />
+    <h1>Conectar al ESP32</h1>
+    <p>Seleccione el método de conexión:</p>
+    <button id="btn-ble" class="big-btn">Bluetooth</button>
+    <button id="btn-wifi" class="big-btn">Internet (MQTT)</button>
+  </div>
+
+  <!-- Pantalla principal -->
+  <div id="main-screen" class="screen">
+    <h1>Control de Inmovilizador</h1>
+    <button id="btn-activar" class="big-btn action">Activar inmovilizador</button>
+    <button id="btn-desactivar" class="big-btn action">Desactivar inmovilizador</button>
+    <button id="btn-disconnect" class="small-btn">Desconectar</button>
+  </div>
+
+  <!-- Pantalla de cuestionario -->
+  <div id="quiz-screen" class="screen">
+    <h2 id="quiz-title"></h2>
+    <div id="quiz-container">
+      <img id="quiz-image" src="" alt="Referencia" />
+      <div id="options-container"></div>
+      <button id="btn-evaluate" class="big-btn">Evaluar</button>
+      <button id="btn-retry" class="big-btn hidden">Reintentar</button>
+      <div id="feedback" class="feedback hidden"></div>
+    </div>
+  </div>
+
+  <!-- Pantalla de comando final -->
+  <div id="command-screen" class="screen">
+    <h2 id="command-message"></h2>
+    <button id="btn-send-command" class="big-btn"></button>
+    <button id="btn-back-main" class="small-btn">Volver al inicio</button>
+  </div>
+
+  <!-- Indicador de estado -->
+  <div id="status-bar">Estado: Desconectado</div>
+
+  <!-- Librería MQTT.js -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

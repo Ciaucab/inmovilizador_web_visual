@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Visualización 3D - Sistema de Inyección</title>
+  <link rel="stylesheet" href="css/visualizacion.css" />
+</head>
+<body>
+  <h1>Sistema de Inyección</h1>
+
+  <div id="status-box">
+    <span>Estado:</span>
+    <span id="estado-texto">Conectando...</span>
+    <div id="estado-led" class="led"></div>
+  </div>
+
+  <div id="three-container"></div>
+  <div class="footer-note">Conectado al bróker MQTT · Actualización en tiempo real</div>
+
+  <!-- Librerías externas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+  <!-- Nuestro script -->
+  <script src="js/visualizacion.js"></script>
+</body>
+</html>

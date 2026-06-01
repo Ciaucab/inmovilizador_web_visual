@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #1a1a1a;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.screen.active {
+  display: flex;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f0c040;
+}
+
+.big-btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: #2a5f2a;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.big-btn:active {
+  background: #1e421e;
+}
+
+.action {
+  background: #b5651d;
+}
+
+.small-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background: #333;
+  color: #eee;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#quiz-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#quiz-image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #f0c040;
+  border-radius: 12px;
+  background: #2a2a2a;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.option-btn {
+  padding: 0.9rem;
+  background: #333;
+  border: 1px solid #666;
+  border-radius: 8px;
+  color: #ddd;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.option-btn.selected {
+  background: #3a5f3a;
+  border-color: #6f6;
+  color: white;
+}
+
+.feedback {
+  padding: 0.8rem;
+  background: #4a2a2a;
+  border-left: 4px solid #f44;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#status-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+#logo-inicio {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
