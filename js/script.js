@@ -5,7 +5,7 @@ const BLE_SERVICE_UUID = '4fafc201-1fb5-459e-8fcc-c5c9c331914b';
 const BLE_CHARACTERISTIC_UUID = 'beb5483e-36e1-4688-b7f5-ea07361b26a8';
 
 // Datos de EMQX Cloud (ya reemplazados con tus valores)
-const MQTT_BROKER = 'u112ff97.ala.us-east-1.emqxsl.com';
+const MQTT_BROKER = 'i281cfce.ala.us-east-1.emqxsl.com';
 const MQTT_PORT = 8084;               // Puerto WebSocket seguro (WSS)
 const MQTT_USER = 'esp';
 const MQTT_PASS = 'esp2026';
