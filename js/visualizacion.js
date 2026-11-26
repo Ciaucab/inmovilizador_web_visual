@@ -1,7 +1,7 @@
 // =============================================
 // CONFIGURACIÓN MQTT (idéntica a la principal)
 // =============================================
-const MQTT_BROKER = 'u112ff97.ala.us-east-1.emqxsl.com';
+const MQTT_BROKER = 'i281cfce.ala.us-east-1.emqxsl.com';
 const MQTT_PORT = 8084;
 const MQTT_USER = 'esp';
 const MQTT_PASS = 'esp2026';
